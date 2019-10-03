@@ -1,0 +1,17 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Title</title>
+</head>
+<body>
+<script>
+    let money = prompt("Nhập số tiền ban đầu: ");
+    let month = parseFloat(prompt("Nhập số tháng: "));
+    let per=parseFloat(prompt("Nhập lãi suất"));
+    sum = money * Math.pow(1+(per/100),month);
+    document.write(sum)
+
+</script>
+</body>
+</html>

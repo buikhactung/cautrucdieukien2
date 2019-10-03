@@ -1,0 +1,30 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>giải phương trình ax2 + bx +c =0</title>
+</head>
+<body>
+<script>
+    let a = prompt("Nhập só a: ")
+    let b = prompt("Nhập số b: ")
+    let c = prompt("Nhập số c: ")
+    let Delta;
+    Delta= (b*b) - (4*a*c);
+    if (Delta>0) {
+        x1 = ((-b) + (Math.sqrt(Delta)))/(2*a);
+        x2 = ((-b) - (Math.sqrt(Delta)))/(2*a);
+        document.write("x1 = " +x1)
+        document.write(" ")
+        document.write("x2 = " + x2)
+    }else if (Delta=0) {
+        x=(-b)/(2*a)
+        document.write("Phương trình có nghiệm kép: " + x);
+    }else {
+        document.write("Phương trình vô nghiệm");
+
+    }
+
+</script>
+</body>
+</html>

@@ -1,0 +1,22 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Title</title>
+</head>
+<body>
+<script>
+    let a = prompt("Nhập thu nhập: ");
+        if (a<9000000) {
+        document.write("thuế thu nhập là 0%")
+        }else if( a<2000000) {
+            sum = (a*15)/100
+        }else if (a<40000000) {
+            sum = (a*25)/100
+        }else {
+            sum = (a*40)/100
+        }
+        document.write("thuế thu nhập là: "+sum)
+</script>
+</body>
+</html>
